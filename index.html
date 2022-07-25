@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Template Project</title>
   <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
+
 <body>
 
 
@@ -16,7 +18,33 @@
   <!-- SITE HEADER START -->
 
   <header class="site-header">
-
+    <div class="container">
+      <div class="site-header__wrapper">
+        <a class="logo" href="./index.html">
+          <img class="logo__img" src="./images/logo.svg" alt="CoffeeRoaster logo">
+        </a>
+        <button class="site-header__btn"></button>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                Create Your Plan
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <!-- SITE HEADER END -->
@@ -26,7 +54,21 @@
   <main class="site-main">
 
     <section class="hero">
-      
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__infos">
+            <h1 class="hero__title">
+              Great coffee made simple.
+            </h1>
+            <p class="hero__text">
+              Start your mornings with the world’s best coffees. Try our expertly curated artisan
+              coffees from our best roasters delivered directly to your door, at your schedule.
+            </p>
+            <a class="plan" href="#">Create your plan</a>
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </main>
@@ -40,4 +82,5 @@
   <!-- SITE FOOTER END -->
 
 </body>
+
 </html>
