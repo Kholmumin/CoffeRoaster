@@ -181,7 +181,7 @@ a {
 
 .hero__infos {
   width: 100%;
-  max-width: 398px;
+  max-width: 583px;
   padding: 6px;
   text-align: center;
 }
@@ -245,13 +245,16 @@ a {
     padding: 95px 0 ;
   }
   .hero__infos{
+    max-width: 498px;
     padding-left: 58px;
     text-align: left;
   }
 
-
- 
+  .hero__title{
+    font-size: 48px;
+  }
 }
+
 
 @media only screen and (min-width:768px) {
   .hero__wrapper{
@@ -260,7 +263,17 @@ a {
   }
 
   .hero__infos{
+    max-width: 596px;
     padding-left: 85px;
+  }
+
+  .hero__title{
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .hero__text{
+    font-size: 16px;
   }
 
   .plan{
