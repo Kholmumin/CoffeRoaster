@@ -246,7 +246,7 @@ a {
 }
 
 
-.collection__item::before{
+.collection__item::before {
   display: block;
   width: 200px;
   height: 150px;
@@ -256,24 +256,25 @@ a {
   background-repeat: no-repeat;
 }
 
-.collection__item:nth-child(1)::before{
+.collection__item:nth-child(1)::before {
   background-image: url("../images/granPh.png");
   background-repeat: no-repeat;
 }
 
 
-.collection__item:nth-child(2)::before{
+.collection__item:nth-child(2)::before {
   background-image: url("../images/plantoPh.png");
 }
 
-.collection__item:nth-child(3)::before{
+.collection__item:nth-child(3)::before {
   background-image: url("../images/picolloPh.png");
 }
-.collection__item:nth-child(4)::before{
+
+.collection__item:nth-child(4)::before {
   background-image: url("../images/danchePh.png");
 }
 
-.collection__item:not(:last-child){
+.collection__item:not(:last-child) {
   margin-bottom: 48px;
 }
 
@@ -303,6 +304,117 @@ a {
 }
 
 
+/* Choose */
+
+.choose {
+  padding-bottom: 120px;
+}
+
+.choose-all {
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 600px;
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+
+.choose__box {
+  max-width: 540px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.choose__heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 28px;
+  color: var(--light-cream);
+}
+
+.choose__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--light-cream);
+  opacity: 0.8;
+}
+
+.choose__list {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.choose__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 269px;
+  padding: 72px 33px 51px 33px;
+  background-color: #0E8784;
+  border-radius: 8px;
+}
+
+.choose__item:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.choose__item::before {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 38px;
+  background-image: url("../images/quality.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.choose__item:nth-child(2)::before{
+  background-image: url("../images/prize.svg");
+}
+
+.choose__item:nth-child(3)::before{
+  background-image: url("../images/shipping.svg");
+}
+
+.choose__info {
+  text-align: center;
+}
+
+.choose__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--light-cream);
+}
+
+.choose__desc {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--light-cream);
+}
+
+
+.work{
+  padding-top: 200px;
+}
+
+
+
 
 
 
@@ -324,6 +436,10 @@ a {
 
   .hero__info {
     padding: 0 24px;
+  }
+
+  .choose__item{
+    max-width: 293px;
   }
 }
 
@@ -350,7 +466,7 @@ a {
   }
 
 
-  .collection__wrapper{
+  .collection__wrapper {
     max-width: 420px;
   }
 
@@ -412,24 +528,53 @@ a {
     padding-top: 144px;
     padding-bottom: 129px;
     background-image: url("../images/collectionTb.png");
-    background-position: top 80px center ;
+    background-position: top 80px center;
   }
 
-  .collection__item{
+  .collection__item {
     display: flex;
   }
-  .collection__item::before{
+
+  .collection__item::before {
     width: 255px;
     height: 193px;
     background-image: url("../images/dancheDk.png");
     margin-right: 36px;
   }
-  .collection__wrapper{
+
+  .collection__wrapper {
     text-align: left;
   }
-  .collection__title{
+
+  .collection__title {
     margin-bottom: 24px;
   }
+
+
+  .choose-all{
+    padding-bottom: 375px;
+  }
+
+  .choose__heading{
+    font-size: 32px;
+  }
+  
+  .choose__item{
+    flex-direction: row;
+    max-width: 520px;
+    padding: 41px 48px 41px 70px;
+  }
+
+  .choose__item::before{
+    width: 102px;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .choose__info{
+    text-align: left;
+  }
+
 }
 
 @media only screen and (min-width:768px) {
@@ -473,46 +618,119 @@ a {
     background-position: center calc(50% - 405px);
   }
 
-  .collection__list{
+  .collection__list {
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .collection__item{
+
+  .collection__item {
     flex-direction: column;
   }
 
- 
-  .collection__item:nth-child(1)::before{
+
+  .collection__item:nth-child(1)::before {
     background-image: url("../images/grandDk.png");
   }
-  .collection__item:nth-child(2)::before{
+
+  .collection__item:nth-child(2)::before {
     position: relative;
     top: 21px;
     left: 20px;
     background-image: url("../images/olantoDk.png");
   }
-  
-  .collection__item:nth-child(3)::before{
+
+  .collection__item:nth-child(3)::before {
     background-image: url("../images/picolloDk.png");
   }
-  .collection__item:nth-child(4)::before{
+
+  .collection__item:nth-child(4)::before {
     background-image: url("../images/dancheDk.png");
   }
 
-  .collection__wrapper{
+  .collection__wrapper {
     max-width: 255px;
     text-align: center;
   }
 
-  .collection__text{
+  .collection__text {
     font-style: 16px;
+  }
+
+  .choose__item{
+    max-width: 573px;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  .choose-all{
+    padding-bottom: 256px;
+  }
+
+  .choose__heading{
+    font-size: 40px;
+  }
+
+  .choose__text{
+    font-size: 16px;
+  }
+  .choose__list{
+    justify-content: center;
+    flex-direction: row;
+ 
+  }
+    .choose__item{
+      padding: 72px 48px 48px 47px;
+      flex-direction: column;
+      max-width: 285px;
+    }
+
+    .choose__item:not(:last-child){
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    .choose__item::before{
+      margin: 0;
+      margin-bottom: 56px;
+      width: 72px;
+    }
+
+    .choose__info{
+      text-align: center;
+    }
+
+    .choose__title{
+      font-size: 20px;
+    }
+
+    .choose__desc{
+      font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:1290px) {
+  .collection {
+    background-position: center calc(50% - 420px);
+  }
+  .choose__item{
+    max-width: 350px;
+  }
+
+  .choose__title{
+    font-size: 24px;
+  }
+
+  .choose__desc{
+    font-size: 15px;
   }
 }
 
-@media only screen and (min-width:1350px) {
+@media only screen and (min-width:1324px) {
   .collection {
-    background-position: center calc(50% - 420px);
+    background-position: center calc(50% - 250px);
   }
 }
